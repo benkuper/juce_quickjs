@@ -116,6 +116,9 @@ private:
     const ReferenceCountedObjectPtr<RootObject> root;
     void prepareTimeout() const noexcept;
 
+	qjs::Runtime runtime;
+	qjs::Context context;
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (QuickJSEngine)
 };
 
